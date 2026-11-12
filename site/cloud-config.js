@@ -5,9 +5,11 @@
  * 不要在前端放置任何长期密钥 / client_secret / 服务端凭证。
  */
 window.__ORBIT_CLOUD__ = {
-  endpoint: 'https://orbit-github-nav.app.workbuddy.host',
+  // 本仓库自己的云服务环境（appId: wbapp_cbPJ6Q5BxSWyE86of3cWwG）
+  // 注意：endpoint 必须与发布域名完全一致，服务端会做严格 Origin 匹配。
+  endpoint: 'https://orbit-github-nav-58684.app.workbuddy.host',
   oauthRelayBaseUrl: 'https://www.workbuddy.cn/v2/as/genie-baas/oauth',
-  publishableKey: 'wbpk_ch4ljCWeiDq2o2e88ZJOZW_3Oiax6WU5MLS2BuC0Y37zjQlBoX6xUwG',
+  publishableKey: 'wbpk_cbPJ6Q5BxSWyE86of3cWwG_roHnSM2HKfAlOD4Q9oU1QERZXyMckabi',
 
   /**
    * GitHub 账号连接（可选）。
